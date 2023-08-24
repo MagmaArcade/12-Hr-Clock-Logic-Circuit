@@ -11,20 +11,20 @@ I assumed that incorporating a second clock would be the optimal solution, given
 
 <p><strong>Stage 1:</strong><br>
 Design for the minutes side counter with a reset at 59 minutes.</p>
-<img width="674" alt="stage 1" src="Images\Stage 1.png">
+<img width="674" alt="stage 1" src="Images\Stage 1.PNG">
 
 <p><strong>Stage 2:</strong><br>
 Added a manual override switch to halt clock incrementation, utilizing a button (M+) for time advancement.</p>
-<img width="674" alt="stage 2" src="Images\Stage 2.png">
+<img width="674" alt="stage 2" src="Images\Stage 2.PNG">
 
 <p><strong>Stage 3:</strong><br>
 Design for the hour side counter with a reset at 12 hours.</p>
-<img width="674" alt="stage 3" src="Images\Stage 3.png">
+<img width="674" alt="stage 3" src="Images\Stage 3.PNG">
 
 <p><strong>Stage 4:</strong><br>
 Combined stages 2 and 3 for a complete 12-hour clock design.</p>
-<img width="674" alt="stage 4" src="Images\Stage 4.png">
+<img width="674" alt="stage 4" src="Images\Stage 4.PNG">
 
 <p><strong>Stage 5:</strong><br>
 Incorporated an alarm feature as a second clock holding the "alarm time." This feature allows users to switch to the alarm clock and increment it using the H+ and M+ buttons for alarm time setting. Additionally, a snooze feature was added to silence the alarm.</p>
-<img width="674" alt="stage 5" src="Images\Stage 5.png">
+<img width="674" alt="stage 5" src="Images\Stage 5.PNG">
