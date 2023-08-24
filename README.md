@@ -1,28 +1,25 @@
-# 12-Hr-Clock-Logic-Circuit
-Description of the circuit
-My circuit uses two separate clocks, the actual clock that holds the time which is incremented by the clock and the alarm clock that holds the alarm time that is set by the M+ and Hr+ increment buttons. The clocks are on the top and bottom of the circuit, using very similar designs. The two clocks use the same display, which is toggled by the set alarm button. This switch occurs in just below the top clock (actual clock). All buttons are on the right side of the circuit, with the clock time, am/ pm, and alarm indicator.
+#12-Hr-Clock-Logic-Circuit<
+<h1>12-Hr-Clock-Logic-Circuit</h1>
+<p><strong>Description of the circuit:</strong><br>
+My circuit utilizes two distinct clocks: the actual clock, which holds the time incremented by the clock itself, and the alarm clock, which stores the alarm time set by the M+ and Hr+ increment buttons. The clocks are positioned at the top and bottom of the circuit, featuring similar designs. Both clocks share a display, toggled by the set alarm button placed just below the top clock (actual clock). All buttons, including clock time, AM/PM, and the alarm indicator, are located on the right side of the circuit.</p>
 
-An outline of the design
-	The gate used to module between the auto clock and the manual clock uses 2 and gates and an or gate. By enabling the set time pin, the auto clock would be blocked.
-	Many and gates were used to compare the actual and alarm clock. The comparison required both true and both false (using not gates) to ensure that all values that matched were passed through.
-	My actual and alarm clock switch used a similar idea to the auto clock. Where the pin would only allow one set of values to pass through and to be displayed by the hex digit display.
+<p><strong>An outline of the design:</strong><br>
+The gate responsible for switching between the auto clock and the manual clock employs 2 AND gates and an OR gate. Enabling the set time pin blocks the auto clock. Multiple AND gates are employed to compare the actual and alarm clocks. The comparison necessitates both true and false values (utilizing NOT gates) to ensure the passage of matching values. The switch between the actual and alarm clocks employs a concept similar to the auto clock, allowing only one set of values to be displayed by the hex digit display.</p>
 
-Assumptions
-	I assumed that a second clock would be the best solution, as the task required that the time was stored and redisplayed after the alarm clock was set.
-	I assumed the alarm would need a snooze button as the alarm would stay active until action was made, like it would with a real clock. And the task requested the button used to activate the alarm would be the same as the button to disable it, which was strange in my mind. So I added both functionality.
+<p><strong>Assumptions:</strong><br>
+I assumed that incorporating a second clock would be the optimal solution, given the task's requirement to store and redisplay time after setting the alarm clock. I also assumed the need for a snooze button since the alarm should remain active until addressed, similar to real clocks. Despite the unusual request for using the same button to activate and disable the alarm, I incorporated both functionalities.</p>
 
+<p><strong>Stage 1:</strong><br>
+Design for the minutes side counter with a reset at 59 minutes.</p>
 
-Stage 1:
-design for the minutes side counter, with a reset at 59 minutes
+<p><strong>Stage 2:</strong><br>
+Added a manual override switch to halt clock incrementation, utilizing a button (M+) for time advancement.</p>
 
-Stage 2:
-added a manual override switch that would stop the clock from adding to the time. instead using a button (m+) to tick the clock.
+<p><strong>Stage 3:</strong><br>
+Design for the hour side counter with a reset at 12 hours.</p>
 
-Stage 3
-design for the hour side counter, with a reset at 12 hours
+<p><strong>Stage 4:</strong><br>
+Combined stages 2 and 3 for a complete 12-hour clock design.</p>
 
-Stage 4
-combined the stage 2 and 3 for full 12 hour clock design
-
-Stage 5:
-added an alarm feature, this took form as a second clock that would hold the "alarm time" also allowing the user to switch to the alarm clock to incremnt it with the H+ and M+ buttons to set the time for the alarm. also added a snooze feature to stop the alarm from ringing.
+<p><strong>Stage 5:</strong><br>
+Incorporated an alarm feature as a second clock holding the "alarm time." This feature allows users to switch to the alarm clock and increment it using the H+ and M+ buttons for alarm time setting. Additionally, a snooze feature was added to silence the alarm.</p>
